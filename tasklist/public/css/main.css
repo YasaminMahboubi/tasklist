@@ -1,0 +1,267 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'AR One Sans', sans-serif;
+    font-family: 'Ysabeau Office', sans-serif;
+}
+#app{
+    width: 100vw;
+    height: 100vh;
+    background-color: #08090B;
+}
+#appSection{
+    width: 100%;
+    height: 100%;
+    display: grid;
+    gap: .5rem;
+    grid-template-columns: .6fr 2fr .6fr;
+}
+.base{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+main{
+    width: 100%;
+    height: 95%;
+    display: flex;
+    flex-direction: column;
+    background-color: #08090B;
+    border-radius: .5rem;
+}
+.boldFont{
+    font-size: 1.3rem;
+}
+.pSize{
+    font-size: 1rem;
+}
+.darkBlueFont {
+    color: #393f93;
+}
+.darkBlueBackground {
+    color: #fff;
+    background-color: #393f93;
+}
+.tomatoFont{
+    color: #cb3535;
+}
+.greenFont{
+    color: green;
+}
+input , button{
+    outline: none;
+    /* border: none; */
+    background-color: transparent;
+}
+
+.whiteFont{
+    color: antiquewhite;
+}
+.yellowFont{
+    color: #FFC37C;
+}
+.backgroundYellow{
+    color: antiquewhite;
+    background-color: #FFC37C;
+}
+.labels{
+    width: 100%;
+    height: 10%;
+    display: flex;
+    color: antiquewhite;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+.hoverPageCounter:hover{
+    color: #FFC37C;
+}
+.aboutTasks{
+    color: #fff;
+    margin-left: 45%;
+    margin-top: 20%;
+}
+.addNewTask{
+    width: 80%;
+    height: 9%;
+    color: #000;
+    display: flex;
+    align-items: center;
+    border-radius: .5rem;
+    justify-content: center;
+    margin-bottom: 1.5rem;
+    transition-duration: .5s;
+}
+/* -------------------- buttons style ---------------------------------------------------------- */
+.high{
+    color: rgb(255, 0, 0);
+    border: 3px solid rgb(255, 0, 0) !important;
+}
+.medium{
+    color: rgb(252, 205, 33);
+    border: 3px solid rgb(252, 205, 33) !important;
+}
+.low{
+    color: rgb(77, 135, 65);
+    border: 3px solid rgb(77, 135, 65) !important;
+}
+
+.work{
+    color: #06917A;
+    border: 3px solid #06917A !important;
+}
+.shopping{
+    color: #8412c6;
+    border: 3px solid #774098 !important;
+}
+.studying{
+    color: #326377;
+    border: 3px solid #326377 !important;
+}
+
+/* --------------------- general display classes ----------------------------------- */
+.hiddenElement {
+    display: none !important;
+}
+/* ------------------------ opacity  ----------------------------------------*/
+.opacityGray{
+    opacity: 0.2 !important;
+}
+
+.focusSessionOnStyle{
+    justify-content: center;
+    align-items: center;
+    grid-template-columns: 1fr !important;
+  }
+
+
+
+
+  #phoneAppSection{
+    width: 100vw;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2%;
+    gap: 1rem;
+    background-color: #08090b;
+  }
+  #phoneLabel{
+    display: flex;
+    justify-content: space-between;
+    color: antiquewhite;
+    width: 90%;
+  }
+  .filterSeperator{
+    width: 80%;
+    height: 2px;
+    margin: 0 auto;
+    color: #999;
+  }
+  #phoneFilterDiv{
+    width: 90%;
+    color: antiquewhite;
+    position: relative;
+  }
+  #phoneFilterDiv > button{
+    font-size: 1rem;
+    color: antiquewhite;
+    margin-right: 10px;
+  }
+  #phoneFilterDiv > i:hover{
+    color: #FFC37C;
+  }
+  #dropDownContainer{
+    z-index: 1000;
+    position: absolute;
+  }
+  #phoneTasks{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  }
+ 
+  #phoneAddTaskDiv{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items:  center;
+    margin-top: .5rem;
+    color: #777;
+    gap: .5rem;
+  }
+  #phoneAddTaskDiv > div{
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    gap: .5rem;
+    align-items: flex-start;
+  }
+  @media screen and (max-width: 500px) {
+        .pSize{
+            font-size: 1.5rem;
+        }
+        .boldFont{
+            font-size: 1.8rem;
+        }
+        .base{
+            width: 90% !important;
+            height: auto !important;
+       }
+  }
+
+
+
+  /* ---------------------- tablet ---------------------------- */
+  #tabletSection{
+    width: 100vw;
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 1.2fr 3.5fr;
+  }
+  #rightSection{
+    display: flex;
+    flex-direction: column;
+    padding-top: 1rem;
+    gap: 1.2rem;
+  }
+  #tabletLabel{
+    width: 90%;
+  }
+  #tabletTasks{
+    width: 90%;
+    height: 25%;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: .5rem;
+  }
+  #pageFooter{
+    color: #fff;
+    display: flex;
+    gap: 1rem;
+  }
+  #tabletExtraOPtion{
+    margin-top: 1rem;
+    display: flex;
+    width: 90%;
+    height: 40%;
+    justify-content: space-between;
+  }
+  #tabletExtraOPtion > div {
+    width: 45%;
+    height: 100%;
+    background-color: #1a1c1e;
+  }
+  #tabletUserSetting{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    padding: 1rem;
+    height: 100%;
+  }
+  #tabletUserSetting > div {
+    padding-left: 2%;
+  }
